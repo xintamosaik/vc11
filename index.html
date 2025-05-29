@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: "Helvetica", "Verdana", "Roboto", "Arial", sans-serif;
+            font-size: 9pt;
+        }
+
+        main {
+            max-width: 210mm;
+        }
+
+        ul {
+            padding-inline-start: 4ch;
+        }
+
+        li,
+        p {
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .dash:before {
+            content: "\00B7";
+        }
+
+        @media print {
+            @page {
+                size: A4;
+            }
+
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            main {
+                margin: 5mm 20mm 15mm 20mm;
+                border: none;
+            }
+
+            ul li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0">
+    <main style="border-right: 1ch #8888 dotted">
+        <section id="title">
+            <h1>
+                <span>Ulf Dellbrügge</span>
+                <span class="dash"></span>
+                <span>Medior Web Developer</span>
+            </h1>
+        </section>
+
+        <section id="contact">
+            <span>
+                <a href="https://www.linkedin.com/in/ulfdellbruegge/" target="_blank">
+                    LinkedIn
+                </a>
+            </span>
+            <span class="dash"></span>
+            <span>
+                <a href="mailto:ulfdellbruegge@gmail.com">
+                    ulfdellbruegge@gmail.com
+                </a>
+            </span>
+            <span class="dash"></span>
+            <span>
+                <a href="https://github.com/xintamosaik" target="_blank">
+                    github.com/xintamosaik
+                </a>
+            </span>
+            <span class="dash"></span>
+            <span>Düsseldorf, Germany</span>
+        </section>
+
+        <!-- SUMMARY-->
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>
+                Outcome-oriented Web Developer with a strong focus on simplifying
+                complex systems, enabling team alignment, and driving practical
+                improvements — even in ambiguous, fast-moving environments.
+                Experienced in modern TypeScript-based development, internal tooling,
+                and migrating legacy systems toward maintainable, observable, and
+                testable architectures.
+            </p>
+            <p>
+                I care about process, collaboration, and long-term value. Colleagues
+                appreciate my initiative, low-ego mentoring, and ability to spot
+                structural issues early — but I wait for readiness and co-shape
+                change, rather than forcing it. Whether building template tooling that
+                cut development loops from minutes to seconds or quietly replacing
+                thousands of fragile lines with 60 that just work, I bring options —
+                and make change easier.
+            </p>
+            <p>
+                Now growing further into team-enabling roles through better listening,
+                architecture clarity, and servant-leader practices.
+            </p>
+        </section>
+
+        <!-- EXPERIENCE-->
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="job entry">
+                <h3>
+                    <span>Web Developer</span>
+                    <span class="dash"></span>
+                    <span>iq digital media marketing gmbh</span>
+                </h3>
+                <h4>
+                    <span>Jan 2024 - Present</span>
+                    <span class="dash"></span>
+                    <span>Düsseldorf, Germany</span>
+                </h4>
+
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Built the SkyMover system</strong> to unify ad
+                            positioning logic across 40+ client websites — replaced hundreds
+                            of scattered, error-prone layout scripts with a 100-line JS
+                            module, significantly reducing technical debt and enabling
+                            faster, observable integration across legacy systems.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Architected and delivered a modern ad template
+                                builder</strong>
+                            using TypeScript and esbuild — replaced a fragile, manual system
+                            with import/export support, modular design, and a local test
+                            environment. Reduced feedback loop time from 3-5 minutes to
+                            under 1 second, enabling rapid iteration and future testing
+                            capabilities.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Reverse-engineered and replaced a 5,000-line legacy
+                                AdController</strong>
+                            with a ~60-line config-driven core — restored control over
+                            deployment, removed reliance on third-party TMS, enabled
+                            versioning, and laid the foundation for CI/CD and
+                            TypeScript-based development across ad tech infrastructure.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Created internal DX tools</strong> including a test
+                            harness for templates, a URL builder to streamline QA workflows,
+                            and macro validation logic — significantly improved developer
+                            efficiency, reduced context-switching, and accelerated the
+                            migration of legacy templates.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Drove culture shift toward engineering best practices</strong>
+                            by introducing TypeScript, ESLint, JSdoc, domain-based folder
+                            structures, and fast-feedback mindsets. Mentored junior
+                            teammates, led pair programming efforts, and helped reshape
+                            quality habits within a historically chaotic delivery
+                            environment.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Coached and enabled a new Chrome extension project</strong>
+                            for PM/stakeholder visibility into ad setup status — contributed
+                            React/Chrome APIs support and shifted the team toward
+                            servant-leader dynamics through ego-suppressed mentoring.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="job entry">
+                <h3>
+                    <span>Full Stack Developer</span>
+                    <span class="dash"></span>
+                    <span>Qanuk GmbH</span>
+                </h3>
+                <h4>
+                    <span>April 2021 - December 2023</span>
+                    <span class="dash"></span>
+                    <span>Osnabrück, Niedersachsen, Germany</span>
+                </h4>
+                <ul>
+                    <li>
+                        <strong>Rebuilt an 8,000+ line legacy invoicing system</strong>
+                        into a modular WordPress plugin (q_invoice) using MVC
+                        architecture, domain/feature slicing, AJAX-based UX, and modern
+                        PHP practices. Achieved full feature parity in ~7 months,
+                        introduced multi-language support, custom tax handling,
+                        import/export logic, and reduced friction for business
+                        stakeholders through faster, dynamic interfaces.
+                    </li>
+                    <li>
+                        <strong>Designed and implemented a flexible internal reporting
+                            system</strong>
+                        (PHP + Chart.js) that enabled visual filtering across event types,
+                        cities, and date ranges — a key decision-making tool praised by
+                        the CEO for its usability and depth. Architected for
+                        extensibility, with lazy AJAX rendering and data-driven config
+                        logic.
+                    </li>
+                    <li>
+                        <strong>Reduced noise and instability in the admin panel</strong>
+                        by fixing 50-70 recurring PHP bugs and cleaning up thousands of
+                        warnings. Introduced a lightweight logging system with trace
+                        capabilities, restoring error log usability and giving the team
+                        visibility into regressions.
+                    </li>
+                    <li>
+                        <strong>Refactored scattered legacy code</strong> (PHP/JS) into
+                        modular components with clear boundaries — cutting bug rates by
+                        ~40% in key workflows and improving overall developer confidence
+                        and responsiveness.
+                    </li>
+                    <li>
+                        <strong>Took initiative to drive peer mentoring</strong> and code
+                        quality practices in a chaotic, process-light environment:
+                        introduced Discord-based pair programming sessions, launched
+                        informal review habits, and promoted better naming, structure, and
+                        JS/PHP linting across the team.
+                    </li>
+                    <li>
+                        <strong>Introduced WP_React, JSdoc, ESLint, and static PHP analysis
+                            tools</strong>
+                        to strengthen reliability and readability. Drove early Docker
+                        adoption to enable testability, though the team was not yet ready
+                        for full TDD.
+                    </li>
+                    <li>
+                        Used Postman for API development, Adminer for SQL analysis, and
+                        <strong>proactively learned unfamiliar tooling to support architectural
+                            improvements</strong>
+                        on the fly.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <strong>Languages:</strong> TypeScript/Javascript, PHP, Golang,
+                    Java, CSS, HTML
+                </li>
+                <li>
+                    <strong>Frameworks:</strong> React, Tailwind, Next, Vite, Webpack
+                </li>
+                <li>
+                    <strong>Tools/Platforms:</strong> Git, Docker, Github (Actions), AWS
+                </li>
+                <li>
+                    <strong>Methodologies:</strong> Agile, Pair/Ensemble Programming,
+                    TDD/BDD
+                </li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+
+        <section>
+            <h2>Education</h2>
+
+            <div class="education entry">
+                <h3>
+                    <span>Master of Arts in Sociology</span>
+                    <span class="dash"></span>
+                    <span>Universität Bielefeld</span>
+                </h3>
+                <h4>
+                    <span>September 2021</span>
+                    <span class="dash"></span>
+                    <span>Bielefeld, NRW, Germany</span>
+                </h4>
+                <p>
+                    Specialization: Qualitative Studies and Workplace
+                    Studies/Ethnomethodology
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
